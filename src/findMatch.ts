@@ -21,4 +21,4 @@ mongoose.connect(uri, (err: any) => {
 
  //the model
  const findMatch = mongoose.model('findMatch', findMatchSchema);
- export defualt findMatch;
+ export default findMatch;
