@@ -22,7 +22,7 @@ app.post("/user/:id", findMatchController.updateUser);
 app.put("/user", findMatchController.addUser);
 app.delete("/users", findMatchController.deleteUser);
 //match finder
-app.get("/uers/matches", findMatchController.findUserMatches);
+// app.get("/uers/matches", findMatchController.findUserMatches);
 
 // start the Express server
 app.listen( port, () => {
