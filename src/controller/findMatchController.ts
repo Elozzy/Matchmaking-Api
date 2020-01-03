@@ -57,7 +57,7 @@ export let updateUser = (req: Request, res: Response) => {
 
 //Delete
 export let deleteUser = (req:Request, res:Response) => {
-    findMatch.deteOne({_id: req.params.id}, (err: any) => {
+    findMatch.deleteOne({_id: req.params.id}, (err: any) => {
         if(err) {
             res.send(err)
 
@@ -66,3 +66,15 @@ export let deleteUser = (req:Request, res:Response) => {
         }
     })
 }
+
+//Perform Matching operation
+
+//  let findSuitabelUser = (req:Request, res:Response) => {
+//     let suitableUser = findMatch.find((err: any,  suitableUser: any) => {
+//         if(err){
+//             res.send(err)
+//         }else{
+//             res.send("A match has been found")
+//         }
+//     })
+//  }
