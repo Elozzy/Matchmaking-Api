@@ -70,5 +70,3 @@ export default class UsersController {
         res.send("successfully Deleted user profile");
       }
     });
-  }
-}
